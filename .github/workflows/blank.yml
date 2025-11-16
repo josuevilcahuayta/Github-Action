@@ -16,6 +16,10 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
+    env:
+      myVar: "Mi primera Variable"
+      Region: "Peru"
+      Cantidad: 12345
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -37,3 +41,10 @@ jobs:
       - name: Primer flujo de trabajo
         run: |
          echo Pimeros pasos de flujo de trabajo .
+
+
+      - name: Impresion Variables de entorno
+        run: |
+         echo La variable de myvar es : $myVar.
+         echo Region es : ${{env.Region}}.
+         echo La Cantidad es : ${{env.Cantidad}}.
