@@ -35,4 +35,5 @@ jobs:
           echo test, and deploy your project.
 
       - name: Primer flujo de trabajo
-        run: Pimeros pasos de flujo de trabajo
+        run: |
+         edcho Pimeros pasos de flujo de trabajo.
