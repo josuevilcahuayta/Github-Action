@@ -36,4 +36,4 @@ jobs:
 
       - name: Primer flujo de trabajo
         run: |
-         echo Pimeros pasos de flujo de trabajo.
+         echo Pimeros pasos de flujo de trabajo .
