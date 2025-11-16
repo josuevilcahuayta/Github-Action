@@ -46,5 +46,5 @@ jobs:
       - name: Impresion Variables de entorno
         run: |
          echo La variable de myvar es : $myVar.
-         echo Region es : ${{env.Region}}.
+         echo Region es: ${{env.Region}}.
          echo La Cantidad es : ${{env.Cantidad}}.
