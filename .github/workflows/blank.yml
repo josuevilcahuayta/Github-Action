@@ -18,6 +18,7 @@ jobs:
   build:
     env:
       myVar: "Mi primera Variable"
+      secondVar: "Mi segunda Variable"
       Region: "Peru"
       Cantidad: 12345
     # The type of runner that the job will run on
@@ -38,13 +39,16 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
+    # Steps Primer flujo de trabajo
       - name: Primer flujo de trabajo
         run: |
          echo Pimeros pasos de flujo de trabajo .
 
-
+    # Steps Impresion Variables de entorno
       - name: Impresion Variables de entorno
         run: |
          echo La variable de myvar es : $myVar.
+          echo La variable de secondVar es : $secondVar.
          echo Region es: ${{env.Region}}.
          echo La Cantidad es : ${{env.Cantidad}}.
+         
