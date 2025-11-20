@@ -21,6 +21,10 @@ jobs:
       secondVar: "Mi segunda Variable"
       Region: "Peru"
       Cantidad: 12345
+
+      user: ${{ secrets.USER}}
+      password: ${{ secrets.PASSWORD }}
+
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -48,7 +52,19 @@ jobs:
       - name: Impresion Variables de entorno
         run: |
          echo La variable de myvar es : $myVar.
-          echo La variable de secondVar es  : $secondVar.
+         echo La variable de secondVar es  : $secondVar.
          echo Region es: ${{env.Region}}.
          echo La Cantidad es : ${{env.Cantidad}}.
+
+
+
+      # Steps Varibales Secretas
+      - name: Variables Secretas
+        run: |
+          echo Usuario secreto es : $user.
+           echo Password secreta es : ${{env.password}}.
+
+         
+
+      
          
