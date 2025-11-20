@@ -24,6 +24,7 @@ jobs:
 
       user: ${{ secrets.USER}}
       password: ${{ secrets.PASSWORD }}
+      pasword_2: ${{secrets.PASSWORD_2}}
 
 
     # The type of runner that the job will run on
@@ -64,6 +65,7 @@ jobs:
         run: |
           echo Usuario secreto es : $user.
            echo Password secreta es : ${{env.password}}.
+           ech o Password 2 secreta es : $pasword_2.
 
       # Steps Varibales Abiertas
       - name: Variables Abiertas
