@@ -65,7 +65,7 @@ jobs:
         run: |
           echo Usuario secreto es : $user.
            echo Password secreta es : ${{env.password}}.
-           ech o Password 2 secreta es : $pasword_2.
+           ech o Password 2 secreta es : ${{env.pasword_2}}.
 
       # Steps Varibales Abiertas
       - name: Variables Abiertas
